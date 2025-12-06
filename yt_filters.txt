@@ -22,6 +22,10 @@ youtube.com##.html5-video-player.ended-mode .ytp-fullscreen-grid
 ! Hides fullscreen grid at video end
 ! Oculta la cuadrícula de pantalla completa al final del video
 
+! Hides video suggestions at the end of the video
+! Oculta las sugerencias de videos al final del video
+www.youtube.com##.ytp-ce-element
+
 youtube.com##ytd-search ytd-item-section-renderer>#contents>:not(ytd-video-renderer),ytd-secondary-search-container-renderer
 ! Hides non-video search results
 ! Oculta los resultados de búsqueda que no son videos
@@ -82,10 +86,16 @@ www.youtube-nocookie.com##.ytp-pause-overlay
 ! Removes pause overlay on nocookie domain
 ! Elimina superposición de pausa en nocookie
 
-youtube.com##ytd-watch-metadata #title, #description, #menu, #subscribe-button-shape, #owner-sub-count, #comments
-! Hides video title, description, menu, subscribe button, subscriber count, and comments
-! Oculta el título del video, descripción, menú, botón de suscripción, contador de suscriptores y comentarios
+www.youtube.com###video-preview-container
+! Disables hover animation on video previews
+! Desactiva la animación al pasar el mouse sobre la vista previa de videos
 
-! Hides video suggestions at the end of the video
-! Oculta las sugerencias de videos al final del video
-www.youtube.com##.ytp-ce-element
+youtube.com##ytd-watch-metadata #title, #description, #owner-sub-count, #comments, #scroll-container, #secondary, #sponsor-button, #header, #guide
+! Hides all main video details and side elements
+! Oculta título del video, descripción, menú, botón de suscripción, contador de suscriptores, comentarios y elementos laterales/guía
+! Add #menu, #subscribe-button-shape if you also want to hide subscribe and like buttons
+! Agrega #menu, #subscribe-button-shape si no quieres el botón de suscribirse ni el de likes
+
+www.youtube.com###start:style(visibility: hidden !important;)
+! Hides the YouTube logo in the header
+! Oculta el logo de YouTube en el encabezado
