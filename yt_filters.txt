@@ -90,7 +90,7 @@ www.youtube.com###video-preview-container
 ! Disables hover animation on video previews
 ! Desactiva la animación al pasar el mouse sobre la vista previa de videos
 
-youtube.com##ytd-watch-metadata #title, #description, #owner-sub-count, #comments, #scroll-container, #secondary, #sponsor-button, #header, #guide, #teaser-carousel, #panels-full-bleed-container
+youtube.com##ytd-watch-metadata #title, #description, #owner-sub-count, #comments, #scroll-container, #secondary, #sponsor-button, #header, #guide, #teaser-carousel, #panels-full-bleed-container, #related, #items
 ! Hides all main video details and side elements
 ! Oculta título del video, descripción, menú, botón de suscripción, contador de suscriptores, comentarios y elementos laterales/guía
 ! Add #menu, #subscribe-button-shape if you also want to hide subscribe and like buttons
